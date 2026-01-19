@@ -18,7 +18,7 @@ gatewayController:
   entityPrefix: ""
   imageRegistry: quay.io
   imageRepository: netscaler/netscaler-k8s-ingress-controller
-  imageTag: 3.3.2
+  imageTag: 3.4.4
   image: "{{ .Values.gatewayController.imageRegistry }}/{{ .Values.gatewayController.imageRepository }}:{{ .Values.gatewayController.imageTag }}"
   pullPolicy: IfNotPresent
   ipam: false
@@ -62,7 +62,7 @@ gatewayController:
 netscalerCpx:
   imageRegistry: quay.io
   imageRepository: netscaler/netscaler-cpx
-  imageTag: 14.1-47.48
+  imageTag: 14.1-60.52
   image: "{{ .Values.netscalerCpx.imageRegistry }}/{{ .Values.netscalerCpx.imageRepository }}:{{ .Values.netscalerCpx.imageTag }}"
   pullPolicy: IfNotPresent
   nsProtocol: "http"
