@@ -173,7 +173,7 @@ The following table lists the configurable parameters of the NetScaler CPX with 
 | gatewayController.gatewayControllerName | Mandatory | N/A | Name of Gateway Controller . |
 | gatewayController.imageRegistry                   | Mandatory  |  `quay.io`               |  The NetScaler gateway controller image registry             |  
 | gatewayController.imageRepository                 | Mandatory  |  `netscaler/netscaler-k8s-ingress-controller`              |   The NetScaler gateway controller image repository             | 
-| gatewayController.imageTag                  | Mandatory  |  `3.3.2`               |   The NetScaler gateway controller image tag            |
+| gatewayController.imageTag                  | Mandatory  |  `3.4.4`               |   The NetScaler gateway controller image tag            |
 | gatewayController.pullPolicy | Mandatory | IfNotPresent | The NetScaler gateway controller image pull policy. |
 | gatewayController.required | Mandatory | true | NSGWC to be run as sidecar with NetScaler CPX |
 | gatewayController.enableLivenessProbe| Optional | False | Enable liveness probe settings for NetScaler Gateway Controller |
@@ -221,7 +221,7 @@ The following table lists the configurable parameters of the NetScaler CPX with 
 | createClusterRoleAndBinding | Mandatory | true | If you want to use a ClusterRole and Cluster Role Binding that you have already created and manage yourself then set to false. Please make sure you have bound the serviceaccount with the cluster role properly.  |
 | netscalerCpx.imageRegistry                   | Mandatory  |  `quay.io`               |  The NetScaler CPX image registry             |  
 | netscalerCpx.imageRepository                 | Mandatory  |  `netscaler/netscaler-cpx`              |   The NetScaler CPX image repository             | 
-| netscalerCpx.imageTag                  | Mandatory  |  `14.1-47.48`               |   The NetScaler CPX image tag            |
+| netscalerCpx.imageTag                  | Mandatory  |  `14.1-60.52`               |   The NetScaler CPX image tag            |
 | netscalerCpx.pullPolicy | Mandatory | IfNotPresent | The NetScaler CPX image pull policy. |
 | netscalerCpx.hostName | Optional | N/A | This entity will be used to set Hostname of the CPX |
 | netscalerCpx.nsLbHashAlgo.required | Optional | false | Set this value to set the LB consistent hashing Algorithm |
